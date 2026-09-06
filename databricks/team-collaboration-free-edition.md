@@ -1,6 +1,6 @@
 # Databricks Free Edition: Collaboration Workflow
 
-A practical guide for the **FTW Batch 12 Data Engineering Scholars** on how we collaborate using Databricks Free Edition and GitHub.
+A practical guide on how to collaborate using Databricks Free Edition and GitHub.
 
 ---
 
