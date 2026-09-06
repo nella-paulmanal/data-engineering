@@ -111,7 +111,7 @@ GitHub is used for:
 
 ## 1. Create a GitHub Testing Repository
 
-For this tutorial, I created a separate GitHub repository so we can demonstrate the collaboration workflow without affecting an actual project repository.
+This time I created a separate GitHub repository so we can demonstrate the collaboration workflow without affecting an actual project repository.
 
 Example repository:
 
@@ -145,19 +145,6 @@ Shared/
 This folder is where we can develop and test queries before moving finalized work into the Git-managed project.
 
 ## 4. Create Individual Testing Notebooks
-
-Within the testing folder, each team member can have their own area.
-
-For example:
-
-```text
-instacart-test-queries/
-├── Bri/
-├── Sara/
-├── Virna/
-├── Tricia/
-└── Sam/
-```
 
 Each member can create their own testing notebooks.
 
@@ -194,7 +181,11 @@ We can use them to:
 
 ## 5. Set Up Team Access
 
-To make the shared workspace accessible to the team, create a group for the project members.
+To make the shared workspace accessible to the team, go to: 
+
+```text
+Settings > Identity and Access > Users > Manage > Add users.
+```
 
 Example:
 
@@ -206,10 +197,6 @@ data-engineering-team
 ├── Tricia
 └── Sam
 ```
-
-The exact user and permission options available may depend on the current Databricks Free Edition environment.
-
-The important concept is that the team members should have access to the shared resources they need without having to manage permissions individually for every resource.
 
 ## 6. Why We Use a Shared Testing Area
 
@@ -225,8 +212,6 @@ FROM products;
 Then test different filters, joins, transformations, or validation logic.
 
 We might change the query several times before deciding what the final version should look like.
-
-That is exactly what the testing area is for.
 
 ```text
 Testing Notebook
@@ -349,15 +334,11 @@ Shared Testing Folder
 Git-managed Project
 ```
 
-The Git Folder is not our general-purpose scratch space.
-
-It represents the project that we are maintaining under version control.
+The Git Folder represents the project that we are maintaining under version control.
 
 ## 11. Test the Git-Managed Version
 
-After adding the finalized query to the Git Folder, run it again.
-
-This gives us another checkpoint before committing the changes.
+After adding the finalized query to the Git Folder, run it again. This gives us another `checkpoint` before committing the changes.
 
 The workflow becomes:
 
@@ -485,9 +466,7 @@ The finalized work is now part of the `main` project.
 
 ## 17. Start the Next Task
 
-When starting another task, pull the latest version of `main` again.
-
-This keeps everyone's Git-managed project up to date.
+When starting another task, pull the latest version of `main` again to keep everyone's Git-managed project up to date.
 
 The cycle repeats:
 
@@ -648,9 +627,7 @@ Pull the updated `main` before starting the next Git-based task.
 
 ## 21. Separating Experimentation, Finalization, and Collaboration
 
-The purpose of this setup is not to make our process unnecessarily complicated.
-
-We are simply separating three things:
+The purpose of this setup is not to make our process unnecessarily complicated. We are simply separating three things:
 
 ### 1. EXPERIMENT
 
@@ -795,14 +772,11 @@ For our FTW Batch 12 projects, the workflow we will use is:
                   `main`
 ```
 
-### In One Line
 
-> **Develop → Test → Finalize → Version Control → Review → Merge**
-
-This is a clean, beginner-friendly collaboration workflow for Databricks Free Edition.
+This is a beginner-friendly collaboration workflow for Databricks Free Edition.
 
 It gives us a practical way to work together using the tools available to us while keeping our finalized project code organized, version-controlled, and reviewed.
 
-The point is not to build the world's most sophisticated development pipeline. We're learning data engineering, not trying to recreate Microsoft's engineering organization in a Saturday class.
+Remember, the point is not to build the world's most sophisticated development pipeline. We're learning data engineering, not trying to recreate Microsoft's engineering organization in a Saturday class:)
 
-The point is to have a workflow that everyone in **FTW Batch 12** can understand, repeat, and maintain.
+The point is to have a workflow that everyone can _understand, repeat, and maintain_.
