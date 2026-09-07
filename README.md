@@ -41,9 +41,9 @@ The repository will evolve as I learn more.
 
 # Current Project
 
-## Retail Data Engineering Pipeline
+## Data Engineering Pipeline
 
-My current hands-on project involves data pipelines built using Databricks and SQL.
+My current hands-on projects involve data pipelines built using Databricks and SQL.
 
 The goal is to take raw CSV files, ingest them into Databricks, clean and validate the data, transform the datasets, and prepare them for reporting and dashboard use.
 
