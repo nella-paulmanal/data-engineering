@@ -186,13 +186,17 @@ We can use them to:
 
 ## 5. Set Up Team Access
 
-To make the shared workspace accessible to the team, go to: 
+To make the shared Databricks environment accessible to the team, first add each team member as a user, then create a group so permissions can be managed collectively instead of assigning them one person at a time.
+
+### 5.1 Add Team Members
+
+Go to:
 
 ```text
-Settings > Identity and Access > Users > Manage > Add users.
+Settings > Identity and Access > Users > Manage > Add users
 ```
 
-Example:
+Add each team member:
 
 ```text
 data-engineering-team
@@ -203,6 +207,51 @@ data-engineering-team
 └── Sam
 ```
 
+### 5.2 Create a Team Group
+
+After adding the users, create a group for the team.
+
+Go to:
+
+```text
+Settings > Identity and Access > Groups > Create group
+```
+
+Example:
+
+```text
+Group: ftw-week-03
+├── Bri
+├── Sara
+├── Virna
+├── Tricia
+└── Sam
+```
+
+Add all team members to this group. This allows permissions to be granted to the group rather than individually to every user.
+
+### 5.3 Set Permissions for the Catalog
+
+When creating the team's catalog, grant the `data-engineering-team` group the appropriate catalog-level permissions.
+
+Example:
+
+| Permission                 | Meaning                                          |
+| -------------------------- | ------------------------------------------------ |
+| `BROWSE`                   | Allows the group to discover the schema          |
+| `USE SCHEMA`               | Allows the group to access and use the schema    |
+| `USE CATALOG`               | Allows the group to access and use the catalog    |
+| `CREATE TABLE`             | Allows the group to create tables                |
+| `CREATE MATERIALIZED VIEW` | Allows the group to create materialized views    |
+| `SELECT`                   | Allows the group to read/query data              |
+| `MODIFY`                   | Allows the group to modify table data            |
+| `READ VOLUME`              | Allows the group to read files stored in volumes |
+
+```
+
+Using a group is preferable for team projects because permissions only need to be configured once. When a team member is added to or removed from the group, their access automatically follows the group's permissions.
+
+```
 ## 6. Why We Use a Shared Testing Area
 
 The testing area gives us somewhere to experiment without immediately changing the version-controlled project.
