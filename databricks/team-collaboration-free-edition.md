@@ -196,16 +196,7 @@ Go to:
 Settings > Identity and Access > Users > Manage > Add users
 ```
 
-Add each team member:
-
-```text
-data-engineering-team
-├── Bri
-├── Sara
-├── Virna
-├── Tricia
-└── Sam
-```
+Add each team member.
 
 ### 5.2 Create a Team Group
 
