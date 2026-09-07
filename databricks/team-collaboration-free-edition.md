@@ -1,14 +1,14 @@
 # Databricks Free Edition: Collaboration Workflow
 
-A practical guide on how to collaborate using Databricks Free Edition and GitHub.
+A practical guide on how to collaborate using Databricks Free Edition and GitHub. 
 
 ---
 
 ## Purpose
 
-I created this guide to document the Databricks collaboration workflow that we can use for our data engineering projects.
+I created this guide to document the Databricks collaboration workflow that my group used for our data engineering projects.
 
-Since I initially set up our Databricks workspace and GitHub integration, this documentation is meant to make the setup and workflow easier for everyone to understand and follow, especially when working on our group projects.
+Since I initially set up our Databricks workspace and GitHub integration, this documentation is meant to make the setup and workflow easier for everyone to understand and follow, especially when working on our group assignments.
 
 The goal is to have a simple and consistent process for:
 
@@ -26,6 +26,11 @@ The goal is to have a simple and consistent process for:
 
 > **Develop → Test → Finalize → Pull `main` → Create Branch → Add Code → Test → Commit → Push → Pull Request → Review → Merge**
 
+### Setup Demonstration
+
+A video demonstration of the Databricks Free Edition and GitHub setup process is available here:
+
+🎥 [Watch the Setup Demonstration Video](https://drive.google.com/drive/folders/1l0SOqkYxM1KATLvdbxWqUgdmw2Jlb3ZV?usp=sharing)
 
 ## Table of Contents
 
@@ -776,7 +781,5 @@ For our FTW Batch 12 projects, the workflow we will use is:
 This is a beginner-friendly collaboration workflow for Databricks Free Edition.
 
 It gives us a practical way to work together using the tools available to us while keeping our finalized project code organized, version-controlled, and reviewed.
-
-Remember, the point is not to build the world's most sophisticated development pipeline. We're learning data engineering, not trying to recreate Microsoft's engineering organization in a Saturday class:)
 
 The point is to have a workflow that everyone can _understand, repeat, and maintain_.
